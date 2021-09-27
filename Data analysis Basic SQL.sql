@@ -1,5 +1,4 @@
 -- Data source Parch & Posey
--- https://video.udacity-data.com/topher/2020/May/5eb5533b_parch-and-posey/parch-and-posey.sql
 -- In the Parch & Posey database there are five tables (essentially 5 spreadsheets):
 --1.	web_events
 --2.	accounts
@@ -327,7 +326,7 @@ LIMIT 1;
 
 --CASE 
 
---Write a query to display for each order, the account ID, total amount of the order, and the level of the order - ‘Large’ or ’Small’ - depending on if the order is $3000 or more, or less than $3000.
+--Write a query to display for each order, the account ID, total amount of the order, and the level of the order - Â‘LargeÂ’ or Â’SmallÂ’ - depending on if the order is $3000 or more, or less than $3000.
 SELECT account_id, total_amt_usd,
 CASE WHEN total_amt_usd > 3000 THEN 'Large'
 ELSE 'Small' END AS order_level
